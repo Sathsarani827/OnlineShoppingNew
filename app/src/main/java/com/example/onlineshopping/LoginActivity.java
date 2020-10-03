@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 import com.example.onlineshopping.Modle.Users;
 import com.example.onlineshopping.Prevalent.Prevalent;
+import com.example.onlineshopping.home.HomeActivity;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -152,9 +153,9 @@ public class LoginActivity extends AppCompatActivity {
                                 Toast.makeText(LoginActivity.this, "logged in Successfully...", Toast.LENGTH_SHORT).show();
                                 loadingBar.dismiss();
 
-                                /*Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
+                                Intent intent = new Intent(LoginActivity.this, HomeActivity.class);
                                 Prevalent.currentOnlineUser = usersData;
-                                startActivity(intent);*/
+                                startActivity(intent);
                             }
                         }
                         else
